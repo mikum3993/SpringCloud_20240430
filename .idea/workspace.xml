@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="957f1b61-dcaf-40bd-bec0-a19d0f044376" name="Changes" comment="commit;">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/po/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/vo/AddressVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/service/IUservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/service/IUservice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/service/Impl/IUserviceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/service/Impl/IUserviceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/I_MybatisPlus_Study/src/test/java/com/itheima/mp/domain/service/IUserviceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/I_MybatisPlus_Study/src/test/java/com/itheima/mp/domain/service/IUserviceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/vo/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/vo/UserVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,37 +53,37 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ITstudy/proguramingstudy/Javastudy/SpringCloud_study/Studycode/SpringCloud_Study/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/query&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;882a2694bcf340c5e9b95dbb1436e8a2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-11",
+    "last_opened_file_path": "D:/ITstudy/proguramingstudy/Javastudy/SpringCloud_study/Studycode/SpringCloud_Study/I_MybatisPlus_Study/src/main/java/com/itheima/mp/domain/vo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "882a2694bcf340c5e9b95dbb1436e8a2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\query" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\vo" />
+      <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\query" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\dto" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\test\java" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima" />
@@ -130,7 +131,7 @@
       <updated>1714472608373</updated>
       <workItem from="1714472610006" duration="3769000" />
       <workItem from="1714526969037" duration="11733000" />
-      <workItem from="1714549921362" duration="977000" />
+      <workItem from="1714549921362" duration="4031000" />
     </task>
     <task id="LOCAL-00001" summary="commit;">
       <created>1714472946326</created>
@@ -146,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714547901321</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit;">
+      <created>1714550907247</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714550907247</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

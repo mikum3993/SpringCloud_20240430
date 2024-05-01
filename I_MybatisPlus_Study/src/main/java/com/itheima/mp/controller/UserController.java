@@ -44,8 +44,10 @@ public class UserController {
 
     @ApiOperation("根据id查询用户接口")
     @GetMapping("/{id}")
-    public void selectUserById(@ApiParam("用户id") @PathVariable("id") Long id) {
-        userService.getById(id);
+    public UserVO selectUserById(@ApiParam("用户id") @PathVariable("id") Long id) {
+
+        return userService.queryUserAndAddressById(id);
+        // userService.getById(id);
     }
 
     @ApiOperation("根据id批量查询用户接口")
@@ -56,7 +58,6 @@ public class UserController {
 
         return BeanUtil.copyToList(users, UserVO.class);
     }
-
 
     @ApiOperation("扣减用户余额操作")
     @PutMapping("/{id}/dediction/{money}")

@@ -1,9 +1,12 @@
 package com.itheima.mp.domain.service.Impl;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.itheima.mp.domain.po.Address;
 import com.itheima.mp.domain.po.User;
 import com.itheima.mp.domain.service.IUservice;
+import com.itheima.mp.domain.vo.AddressVO;
+import com.itheima.mp.domain.vo.UserVO;
 import com.itheima.mp.mapper.UserMapper;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -57,5 +60,24 @@ public class IUserviceImpl extends ServiceImpl<UserMapper, User> implements IUse
                 .ge(minBalance != null, User::getBalance, minBalance)
                 .ge(maxBalance != null, User::getBalance, maxBalance)
                 .list();
+    }
+
+    @Override
+    public UserVO queryUserAndAddressById(Long id) {
+        //查询用户
+        // User user = this.getById(id);
+        // if (user==null ||user.getStatus()==2){
+        //     throw new RuntimeException("用户异常");
+        // }
+        // //查询地址
+        // // 2.查询收货地址
+        // List<Address> addresses = Db.lambdaQuery(Address.class)
+        //         .eq(Address::getUserId, id)
+        //         .list();
+        // // 3.处理vo
+        // UserVO userVO = BeanUtil.copyProperties(user, UserVO.class);
+        // userVO.setAddresses(BeanUtil.copyToList(addresses, AddressVO.class));
+        // return userVO;
+        return null;
     }
 }
