@@ -12,7 +12,7 @@ import java.util.List;
  * @create: 2024/5/1 14:45
  */
 public interface IUservice extends IService<User> {
-    void deductMoneyById(Long id, Double money);
+    void deductMoneyById(Long id, Integer money);
 
     List<User> queryUsers(String name, Integer status, Integer minBalance, Integer maxBalance);
 }

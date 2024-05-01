@@ -2,10 +2,12 @@ package com.itheima.mp.domain.service;
 
 import com.itheima.mp.domain.po.User;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.engine.execution.JupiterEngineExecutionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -29,4 +31,45 @@ class IUserviceTest {
         usersvice.save(user);
     }
 
+    private User builder(int i) {
+        User user = new User();
+        user.setId(5L);
+        user.setUsername("LiLei" + i);
+        user.setPassword("123");
+        user.setPhone("18688990011");
+        user.setBalance(200);
+        user.setInfo("{\"age\": 24, \"intro\": \"英文老师\", \"gender\": \"female\"}");
+        user.setCreateTime(LocalDateTime.now());
+        user.setUpdateTime(LocalDateTime.now());
+
+        usersvice.save(user);
+        return user;
+    }
+
+    @Test
+    void testSaveOnByOne() {
+        long b = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            usersvice.save(builder(i));
+        }
+        long e = System.currentTimeMillis();
+        System.out.println("耗时: " + (e - b));
+    }
+
+    @Test
+    void testSaveBatch() {
+
+
+        ArrayList<User> list = new ArrayList<>(1000);
+        long b = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            list.add(builder(i));
+            if (i % 1000 == 0) {
+                usersvice.saveBatch(list);
+                list.clear();
+            }
+        }
+        long e = System.currentTimeMillis();
+        System.out.println("耗时: " + (e - b));
+    }
 }

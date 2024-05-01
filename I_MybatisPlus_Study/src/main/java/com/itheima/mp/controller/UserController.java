@@ -62,7 +62,7 @@ public class UserController {
     @PutMapping("/{id}/dediction/{money}")
     public void deductMoneyById(
             @ApiParam("用户id") @PathVariable("id") Long id,
-            @ApiParam("金额") @PathVariable("money") Double money) {
+            @ApiParam("金额") @PathVariable("money") Integer money) {
         userService.deductMoneyById(id,money);
     }
 

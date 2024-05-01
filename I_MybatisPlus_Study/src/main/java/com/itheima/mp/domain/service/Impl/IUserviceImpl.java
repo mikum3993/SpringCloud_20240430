@@ -19,7 +19,7 @@ public class IUserviceImpl extends ServiceImpl<UserMapper, User> implements IUse
 
     @Override
     @Transactional
-    public void deductMoneyById(Long id, Double money) {
+    public void deductMoneyById(Long id, Integer money) {
         // 查询用户
         User user = this.getById(id);
         // 校验用户状态
@@ -32,7 +32,14 @@ public class IUserviceImpl extends ServiceImpl<UserMapper, User> implements IUse
         }
 
         // 扣减余额
-        baseMapper.deductBalance(id, money);
+        // baseMapper.deductBalance(id, money);
+        int remainBalance = user.getBalance() - money;
+        //修改
+        lambdaUpdate()
+                .set(User::getBalance, remainBalance)
+                .set(remainBalance == 0, User::getStatus, 2)
+                .eq(User::getId,id)
+                .update();
     }
 
     @Override
