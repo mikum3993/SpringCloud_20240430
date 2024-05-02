@@ -1,6 +1,7 @@
 package com.itheima.mp.controller;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.extension.plugins.pagination.PageDTO;
 import com.itheima.mp.domain.dto.UserFormDTO;
 import com.itheima.mp.domain.po.User;
 import com.itheima.mp.domain.query.UserQuery;
@@ -54,9 +55,11 @@ public class UserController {
     @GetMapping("")
     public List<UserVO> selectUserByIds(@ApiParam("用户id集合") @RequestParam("ids") List<Long> ids) {
 
-        List<User> users = userService.listByIds(ids);
+        // List<User> users = userService.listByIds(ids);
+        //
+        // return BeanUtil.copyToList(users, UserVO.class);
 
-        return BeanUtil.copyToList(users, UserVO.class);
+        return userService.queryUserAndAddressByIds(ids);
     }
 
     @ApiOperation("扣减用户余额操作")
@@ -77,5 +80,9 @@ public class UserController {
                 ,query.getMaxBalance());
         return BeanUtil.copyToList(users, UserVO.class);
     }
-
+    @ApiOperation("分页查询用户")
+    @GetMapping("/page")
+    public PageDTO<UserVO> queryUsersPage(UserQuery query) {
+        return userService.queryUserPage(query);
+    }
 }
