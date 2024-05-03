@@ -5,37 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="957f1b61-dcaf-40bd-bec0-a19d0f044376" name="Changes" comment="commit;">
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/cartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/doamin/dto/CartFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/doamin/dto/ItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/doamin/po/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/doamin/vo/CartVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/mapper/CartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/service/ICartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/service/Impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/resources/application-local.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/controller/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/doamin/dto/ItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/doamin/dto/OrderDetailDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/doamin/po/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/doamin/query/ItemPageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/itemApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/mapper/ItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/service/IItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/service/Impl/ItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/resources/application-local.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/client/ItemClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-api/src/main/java/com/hmall/api/client/ItemClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-api/src/main/java/com/hmall/api/dto/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/II_hmall/hm-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/hm-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/II_hmall/hm-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/hm-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/cartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/cartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/doamin/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/doamin/dto/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/service/Impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/service/Impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/II_hmall/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,11 +109,11 @@
       <recent name="com.itheima.mp.domain.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hmall.api.dto" />
+      <recent name="com.hmall.api.client" />
       <recent name="com.mhmall.cart.doamin.dto" />
       <recent name="com.mhmall.cart.controller" />
       <recent name="com.mhmall.cart.service" />
-      <recent name="com.mhmall.cart.service.Impl" />
-      <recent name="com.mhmall.cart.mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -178,6 +161,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="itemApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="item-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.item.itemApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8083" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="lua.app" factoryName="Lua Application">
       <option name="program" value="lua.exe" />
       <option name="file" value="" />
@@ -191,6 +183,7 @@
     <list>
       <item itemvalue="Spring Boot.cartApplication" />
       <item itemvalue="Spring Boot.itemApplication" />
+      <item itemvalue="Spring Boot.itemApplication2" />
       <item itemvalue="Spring Boot.HMallApplication" />
       <item itemvalue="Spring Boot.HMallApplication (1)" />
       <item itemvalue="Spring Boot.MpDemoApplication" />
@@ -206,7 +199,7 @@
       <updated>1714472608373</updated>
       <workItem from="1714472610006" duration="3769000" />
       <workItem from="1714526969037" duration="11733000" />
-      <workItem from="1714549921362" duration="28433000" />
+      <workItem from="1714549921362" duration="35761000" />
     </task>
     <task id="LOCAL-00001" summary="commit;">
       <created>1714472946326</created>
@@ -264,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714713084474</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit;">
+      <created>1714723232776</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714723232776</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -12,6 +12,9 @@ spring:
     username: root
 #    password: ${hm.db.pw}
     password: 1234
+  cloud:
+    nacos:
+      server-addr: localhost:8848
 mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler

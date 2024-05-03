@@ -7,11 +7,14 @@ spring:
     active: dev
   datasource:
     url: jdbc:mysql://localhost:3306/hm-card?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
-#    url: jdbc:mysql://${hm.db.host}:3306/hmall?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    #    url: jdbc:mysql://${hm.db.host}:3306/hmall?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-#    password: ${hm.db.pw}
+    #    password: ${hm.db.pw}
     password: 1234
+  cloud:
+    nacos:
+      server-addr: localhost:8848
 mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
@@ -42,3 +45,7 @@ knife4j:
         api-rule-resources:
           - com.hmall.cart.controller
 # keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
+#开启连接池
+feign:
+  okhttp:
+    enabled: true
