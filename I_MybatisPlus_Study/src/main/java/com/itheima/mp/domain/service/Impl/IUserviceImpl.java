@@ -5,11 +5,9 @@ import cn.hutool.core.collection.CollUtil;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
-import com.baomidou.mybatisplus.core.toolkit.BeanUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.extension.plugins.pagination.PageDTO;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.itheima.mp.domain.dto.pageDTO;
+import com.itheima.mp.domain.dto.PageDTO;
 import com.itheima.mp.domain.po.Address;
 import com.itheima.mp.domain.po.User;
 import com.itheima.mp.domain.query.UserQuery;
@@ -99,44 +97,45 @@ public class IUserviceImpl extends ServiceImpl<UserMapper, User> implements IUse
 
     @Override
     public List<UserVO> queryUserAndAddressByIds(List<Long> ids) {
-        // 1.查询用户
-        List<User> users = listByIds(ids);
-        if (CollUtil.isEmpty(users)) {
-            return Collections.emptyList();
-        }
-        // 2.查询地址
-        // 2.1获取用户id集合
-        List<Long> userIds = users.stream().map(User::getId).collect(Collectors.toList());
-
-        // 2.2 根据用户id查询地址
-        List<Address> addresses = Db.lambdaQuery(Address.class)
-                .in(Address::getUserId, userIds)
-                .list();
-        // 2.3转换地址VO
-        List<AddressVO> addressVOList = BeanUtil.copyToList(addresses, AddressVO.class);
-        // 2.4 梳理地址集合(用户地址及和分组处理)   ： 分类整理，相同用户的放入一个集合中
-        Map<Long, List<AddressVO>> addressMap = new HashMap<>(0);
-        if (CollUtil.isNotEmpty(addressVOList)) {
-            addressMap = addressVOList.stream()
-                    .collect(Collectors.groupingBy(AddressVO::getUserId));
-        }
-
-        // 3.转VO返回
-        List<UserVO> list = new ArrayList<>(users.size());
-
-        for (User user : users) {
-            // 3.1转UserVO
-            UserVO vo = BeanUtil.copyProperties(user, UserVO.class);
-            list.add(vo);
-            // 3.2转换地址VO
-            vo.setAddresses(addressMap.get(user.getId()));
-        }
-
-        return list;
+        // // 1.查询用户
+        // List<User> users = listByIds(ids);
+        // if (CollUtil.isEmpty(users)) {
+        //     return Collections.emptyList();
+        // }
+        // // 2.查询地址
+        // // 2.1获取用户id集合
+        // List<Long> userIds = users.stream().map(User::getId).collect(Collectors.toList());
+        //
+        // // 2.2 根据用户id查询地址
+        // List<Address> addresses = Db.lambdaQuery(Address.class)
+        //         .in(Address::getUserId, userIds)
+        //         .list();
+        // // 2.3转换地址VO
+        // List<AddressVO> addressVOList = BeanUtil.copyToList(addresses, AddressVO.class);
+        // // 2.4 梳理地址集合(用户地址及和分组处理)   ： 分类整理，相同用户的放入一个集合中
+        // Map<Long, List<AddressVO>> addressMap = new HashMap<>(0);
+        // if (CollUtil.isNotEmpty(addressVOList)) {
+        //     addressMap = addressVOList.stream()
+        //             .collect(Collectors.groupingBy(AddressVO::getUserId));
+        // }
+        //
+        // // 3.转VO返回
+        // List<UserVO> list = new ArrayList<>(users.size());
+        //
+        // for (User user : users) {
+        //     // 3.1转UserVO
+        //     UserVO vo = BeanUtil.copyProperties(user, UserVO.class);
+        //     list.add(vo);
+        //     // 3.2转换地址VO
+        //     vo.setAddresses(addressMap.get(user.getId()));
+        // }
+        //
+        // return list;
+        return null;
     }
 
     @Override
-    public pageDTO<UserVO> queryUserPage(UserQuery query) {
+    public PageDTO<UserVO> queryUserPage(UserQuery query) {
         String name = query.getName();
         Integer status = query.getStatus();
         // 1.构建分页查询条件
@@ -150,6 +149,7 @@ public class IUserviceImpl extends ServiceImpl<UserMapper, User> implements IUse
             // 为空，默认以更新时间排序
             page.addOrder(new OrderItem("update_time", false));
         }
+        // Page<User> page = query.toMpPageDefaultSortByUpdateTime();
         // 2.分页查询
         Page<User> p = lambdaQuery()
                 .like(name != null, User::getUsername, name)
@@ -157,21 +157,30 @@ public class IUserviceImpl extends ServiceImpl<UserMapper, User> implements IUse
                 .page(page);
 
         // 3.封装VO结果
-        pageDTO<UserVO> dto = new pageDTO<>();
-        // 3.1 总条数
-        dto.setTotal(p.getTotal());
-        // 3.2总页数
-        dto.setTotal(p.getPages());
-        // 3.3当前数据
-        List<User> records = p.getRecords();
-        if (CollUtil.isEmpty(records)) {
-            dto.setList(Collections.emptyList());
-            return dto;
-        }
-        // 3.4 拷贝UserVO
-        // List<UserVO> userVOS = BeanUtil.copyToList(records, UserVO.class);
-        dto.setList(BeanUtil.copyToList(records, UserVO.class));
-        // 4.返回
-        return dto;
+        // PageDTO<UserVO> dto = new PageDTO<>();
+        // // 3.1 总条数
+        // dto.setTotal(p.getTotal());
+        // // 3.2总页数
+        // dto.setTotal(p.getPages());
+        // // 3.3当前数据
+        // List<User> records = p.getRecords();
+        // if (CollUtil.isEmpty(records)) {
+        //     dto.setList(Collections.emptyList());
+        //     return dto;
+        // }
+        // // 3.4 拷贝UserVO
+        // // List<UserVO> userVOS = BeanUtil.copyToList(records, UserVO.class);
+        // dto.setList(BeanUtil.copyToList(records, UserVO.class));
+        // // 4.返回
+        // return dto;
+        // return PageDTO.of(p, UserVO.class);
+        // return PageDTO.of(p, user -> BeanUtil.copyProperties(user, UserVO.class));
+        return PageDTO.of(p, user -> {
+            // 1.拷贝基础属性
+            UserVO vo = BeanUtil.copyProperties(user, UserVO.class);
+            // 2.处理特殊逻辑
+            vo.setUsername(vo.getUsername().substring(0, vo.getUsername().length() - 2) + "**");
+            return vo;
+        });
     }
 }
