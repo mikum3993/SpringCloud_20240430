@@ -5,8 +5,110 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="957f1b61-dcaf-40bd-bec0-a19d0f044376" name="Changes" comment="commit;">
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/advice/CommonExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/config/JsonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/domain/PageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/domain/PageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/domain/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/exception/BizIllegalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/exception/CommonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/exception/DbException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/exception/ForbiddenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/exception/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/utils/BeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/utils/CollUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/utils/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/utils/CookieBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/utils/UserContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/utils/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/resources/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/HMallApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/config/AuthProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/config/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/dto/AddressDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/dto/CartFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/dto/ItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/dto/LoginFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/dto/OrderDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/dto/OrderFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/dto/PayApplyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/dto/PayOrderFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/po/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/po/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/po/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/po/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/po/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/po/OrderLogistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/po/PayOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/query/ItemPageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/vo/CartVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/vo/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/vo/PayOrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/domain/vo/UserLoginVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/enums/PayChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/enums/PayStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/enums/PayType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/mapper/CartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/mapper/ItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/mapper/OrderLogisticsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/mapper/PayOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/IAddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/ICartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/IItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/IOrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/IOrderLogisticsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/IOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/IPayOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/impl/OrderLogisticsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/impl/PayOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/java/com/hmall/utils/JwtTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/application-local.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/hmall.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/mapper/CartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/mapper/ItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/mapper/OrderDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/mapper/OrderLogisticsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/mapper/PayOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/mapper/TradeClient.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/test/java/com/hmall/service/impl/HutoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-service/src/test/java/com/hmall/service/impl/ItemServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +165,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "dart.analysis.tool.window.visible": "false",
     "jdk.selected.JAVA_MODULE": "corretto-11",
-    "last_opened_file_path": "D:/ITstudy/proguramingstudy/Javastudy/SpringCloud_study/Studycode/hmall",
+    "last_opened_file_path": "D:/ITstudy/proguramingstudy/Javastudy/SpringCloud_study/Studycode/SpringCloud_Study/II_hmall",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,11 +185,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\II_hmall" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\vo" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\query" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\dto" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\test\java" />
-      <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -104,6 +206,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.MpDemoApplication">
+    <configuration name="HMallApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hm-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.HMallApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HMallApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" value="local" />
       <module name="hm-service" />
@@ -140,7 +249,7 @@
       <updated>1714472608373</updated>
       <workItem from="1714472610006" duration="3769000" />
       <workItem from="1714526969037" duration="11733000" />
-      <workItem from="1714549921362" duration="21510000" />
+      <workItem from="1714549921362" duration="22220000" />
     </task>
     <task id="LOCAL-00001" summary="commit;">
       <created>1714472946326</created>
@@ -184,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714709024407</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit;">
+      <created>1714712389776</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714712389776</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

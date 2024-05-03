@@ -9,6 +9,12 @@
         <option value="$PROJECT_DIR$/../hmall/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../hmall/hm-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../hmall/hm-service/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
