@@ -1,28 +1,28 @@
 server:
   port: 8080  # 推荐单体时的端口设定
-spring:
-  application:
-    name: gateway
-  cloud:
-    nacos:
-      server-addr: localhost:8848
-    gateway:
-      routes:
-        - id: item-service
-          uri: lb://item-service
-          predicates:
-            - Path=/item/**,/search/**
-          #            - Path=/search/**  #可以多配置
-          filters:
-            - AddRequestHeard=X-Request-Red, Blue-{segment}
-        #        -id: user-service
-        #          uri: lb://user-service
-        #          predicates:
-        #            - Path=/item/**,/search/**
-        #            - Path=/search/**  #可以多配置
-      default-filters:
-        - AddRequestHeard=X-Request-Red, Blue-{segment} #对全部服务进行布置
-        - PrintAny=1,2,3
+#spring:
+#  application:
+#    name: gateway
+#  cloud:
+#    nacos:
+#      server-addr: localhost:8848
+#    gateway:
+#      routes:
+#        - id: item-service
+#          uri: lb://item-service
+#          predicates:
+#            - Path=/item/**,/search/**
+#          #            - Path=/search/**  #可以多配置
+#          filters:
+#            - AddRequestHeard=X-Request-Red, Blue-{segment}
+#        #        -id: user-service
+#        #          uri: lb://user-service
+#        #          predicates:
+#        #            - Path=/item/**,/search/**
+#        #            - Path=/search/**  #可以多配置
+#      default-filters:
+#        - AddRequestHeard=X-Request-Red, Blue-{segment} #对全部服务进行布置
+#        - PrintAny=1,2,3
 hm:
   jwt:
     location: classpath:hmall.jks
