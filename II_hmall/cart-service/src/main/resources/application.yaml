@@ -44,7 +44,7 @@ server:
 #        api-rule: package
 #        api-rule-resources:
 #          - com.hmall.cart.controller
-## keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
+# keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
 ##开启连接池
 #feign:
 #  okhttp:
@@ -57,3 +57,9 @@ hm:
     package: com.hmall.cart.controller
   cart:
     maxItems: 1
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090 #sentinel的控制台地址
+      http-method-specify: true #是否设置请求方式作为资源名称
