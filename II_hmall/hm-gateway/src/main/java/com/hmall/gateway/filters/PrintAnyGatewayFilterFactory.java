@@ -1,11 +1,15 @@
 package com.hmall.gateway.filters;
 
+import lombok.Data;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
+import org.springframework.cloud.gateway.filter.OrderedGatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
+
+import java.util.List;
 
 /**
  * @program: SpringCloud_Study
@@ -14,16 +18,33 @@ import reactor.core.publisher.Mono;
  * @create: 2024/5/5 11:20
  */
 @Component
-public class PrintAnyGatewayFilterFactory extends AbstractGatewayFilterFactory<Object> {
+public class PrintAnyGatewayFilterFactory extends AbstractGatewayFilterFactory<PrintAnyGatewayFilterFactory.Config> {
     @Override
-    public GatewayFilter apply(Object config) {
+    public GatewayFilter apply(Config config) {
 
-        return new GatewayFilter() {
+        return new OrderedGatewayFilter(new GatewayFilter() {
             @Override
             public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
                 System.out.println("print any filter running....");
                 return chain.filter(exchange);
             }
-        };
+        }, 1);
+    }
+
+    @Data
+    public static class Config{
+        private String a;
+        private String b;
+        private String c;
+    }
+
+    public PrintAnyGatewayFilterFactory() {
+        super(Config.class);
+    }
+
+    @Override
+    public List<String> shortcutFieldOrder() {
+        // return super.shortcutFieldOrder();
+        return List.of("a","b","c");
     }
 }

@@ -15,10 +15,23 @@ spring:
           #            - Path=/search/**  #可以多配置
           filters:
             - AddRequestHeard=X-Request-Red, Blue-{segment}
-        -id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/item/**,/search/**
+        #        -id: user-service
+        #          uri: lb://user-service
+        #          predicates:
+        #            - Path=/item/**,/search/**
         #            - Path=/search/**  #可以多配置
       default-filters:
         - AddRequestHeard=X-Request-Red, Blue-{segment} #对全部服务进行布置
+        - PrintAny=1,2,3
+hm:
+  jwt:
+    location: classpath:hmall.jks
+    alias: hmall
+    password: hmall123
+    tokenTTL: 30m
+  auth:
+    excludePaths:
+      - /search/**
+      - /users/login
+      - /items/**
+      - /hi

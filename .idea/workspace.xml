@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="957f1b61-dcaf-40bd-bec0-a19d0f044376" name="Changes" comment="commit;">
-      <change afterPath="$PROJECT_DIR$/II_hmall/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/filters/MyGlobalFliter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/filters/PrintAnyGatewayFilterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/II_hmall/item-service/src/main/java/com/hmall/item/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/Config/CartProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/resources/boostrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/java/com/hmall/common/interceptors/UserInfoInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/config/AuthProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/config/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/filters/AuthGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/utils/JwtTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/resources/hmall.jks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/cartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/cartApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/II_hmall/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/service/Impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/java/com/mhmall/cart/service/Impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/cart-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/hm-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/hm-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/hm-common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/hm-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/filters/PrintAnyGatewayFilterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/java/com/hmall/gateway/filters/PrintAnyGatewayFilterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/II_hmall/hm-gateway/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,45 +66,45 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ITstudy/proguramingstudy/Javastudy/SpringCloud_study/Studycode/SpringCloud_Study/II_hmall/cart-service/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15039062&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;63b12af2e5cd2bf3b592984cb3cb734d&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "dart.analysis.tool.window.visible": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-11",
+    "last_opened_file_path": "D:/ITstudy/proguramingstudy/Javastudy/SpringCloud_study/Studycode/SpringCloud_Study/II_hmall/cart-service/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15039062",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "63b12af2e5cd2bf3b592984cb3cb734d",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\II_hmall\cart-service\src\main\resources" />
+      <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\II_hmall\hm-gateway\src\main\resources" />
+      <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\II_hmall\hm-gateway\src\main\java\com\hmall\gateway\config" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\II_hmall\item-service\src\main\resources" />
       <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\II_hmall" />
-      <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\vo" />
-      <recent name="D:\ITstudy\proguramingstudy\Javastudy\SpringCloud_study\Studycode\SpringCloud_Study\I_MybatisPlus_Study\src\main\java\com\itheima\mp\domain\query" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -105,11 +113,11 @@
       <recent name="com.itheima.mp.domain.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hmall.gateway.utils" />
       <recent name="com.hmall.item.controller" />
       <recent name="com.hmall.api.dto" />
       <recent name="com.hmall.api.client" />
       <recent name="com.mhmall.cart.doamin.dto" />
-      <recent name="com.mhmall.cart.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -186,6 +194,9 @@
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="957f1b61-dcaf-40bd-bec0-a19d0f044376" name="Changes" comment="" />
@@ -198,7 +209,7 @@
       <workItem from="1714549921362" duration="37817000" />
       <workItem from="1714805883790" duration="3675000" />
       <workItem from="1714824018848" duration="1194000" />
-      <workItem from="1714874115698" duration="1621000" />
+      <workItem from="1714874115698" duration="10530000" />
     </task>
     <task id="LOCAL-00001" summary="commit;">
       <created>1714472946326</created>
@@ -270,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714734437169</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit;">
+      <created>1714875881290</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714875881290</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
